@@ -104,7 +104,7 @@ sqlite> ALTER TABLE classmates RENAME TO school;
 - 새롭게 행을 추가할 때는 default 값을 넣어주어야 한다.
 
 ```sqlite
-sqlite> ALTER TABLE news ADD COLUMN created_at TEXT NOT NULL;
+sqlite> ALTER TABLE school ADD COLUMN created_at TEXT NOT NULL;
 Error: Cannot add a NOT NULL column with default value NULL
 ```
 
