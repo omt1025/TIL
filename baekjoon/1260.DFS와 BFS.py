@@ -1,10 +1,13 @@
 # https://www.acmicpc.net/problem/1260
+import sys
+sys.setrecursionlimit(99999)
+
 def dfs(n):
     print(n, end=' ')
     visited1[n] = 1
     for i in range(N+1):
         if p[n][i] and visited1[i] == 0:
-            return dfs(i)
+            dfs(i)
 
 def bfs(n):
     visited2[n] = 1
